@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Anúncios - AutoPonto</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="topo">
+        <div class="logo">
+            <img src="../assets/logo.svg" alt="Logotipo AutoPonto">
+            <h1>AutoPonto</h1>
+        </div>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="dashboard.html">Painel</a></li>
+            <li><a href="novo-anuncio.html">Novo Anúncio</a></li>
+            <li><a href="meus-anuncios.html">Meus Anúncios</a></li>
+            <li><a href="../index.html">Sair (logoff)</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 style="margin-bottom: 1rem;">Meus anúncios</h2>
+
+        <!-- Tabela estática de exemplo. Na etapa final isso vira uma tabela
+             montada dinamicamente via JS a partir dos dados vindos do PHP/Ajax -->
+        <table class="tabela-listagem">
+            <thead>
+                <tr>
+                    <th>Foto</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Ano</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="../assets/img/fiat-uno.jpg" alt="Fiat Uno"></td>
+                    <td>Fiat</td>
+                    <td>Uno</td>
+                    <td>2018</td>
+                    <td class="acoes-tabela">
+                        <a href="anuncio-detalhe.html" class="btn-ver">Ver</a>
+                        <a href="interesses.html" class="btn-interesses">Interesses</a>
+                        <button type="button" class="btn-excluir">Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../assets/img/chevrolet-onix.jpg" alt="Chevrolet Onix"></td>
+                    <td>Chevrolet</td>
+                    <td>Onix</td>
+                    <td>2020</td>
+                    <td class="acoes-tabela">
+                        <a href="anuncio-detalhe.html" class="btn-ver">Ver</a>
+                        <a href="interesses.html" class="btn-interesses">Interesses</a>
+                        <button type="button" class="btn-excluir">Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2026 AutoPonto - Projeto acadêmico UFU - Desenvolvimento Web I</p>
+    </footer>
+
+</body>
+</html>
